@@ -11,6 +11,7 @@ class Entidade : public Ente
 {
 protected:
 	//Toda entidade tem um shape
+	//Nem toda entidade tem um shape retângular
 	RectangleShape corpo;
 	int ID;
 
@@ -36,8 +37,5 @@ public:
 	
 	virtual void Executar() = 0;
 	virtual void Colisao(Entidade* entidade) = 0;
-
-
-
 };
 
